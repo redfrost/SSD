@@ -2,19 +2,20 @@
 
 <div class="footer-menubar">
   <div class="<?php echo roots_container_class(); ?>">	 
+  <hr>
     <?php dynamic_sidebar('sidebar-footer'); ?>
   </div>
 </div>
 
 <div class="footer-info">
   <div class="<?php echo roots_container_class(); ?>">	 
-    <ul class="site_copyright">
+    <ul class="site-copyright">
      <li class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></li>
-     <li class="creator">At Sydney Smiles Dental, we proudly support our local laboratory.</li>
+     <li class="creator"><a href="#">Designed by Redfrost</a></li>
     </ul>
     
     <!-- Scroll to top -->
-	<p class="back-top"><a href="#body"><span></span>Back to Top</a></p>
+	<p class="back-top"><a href="#top"><span></span>Back to Top</a></p>
 
   </div>
 </div>

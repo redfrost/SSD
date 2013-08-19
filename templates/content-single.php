@@ -1,7 +1,16 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
-    <header>
+    <header class="post-header">
       <h1 class="entry-title"><?php the_title(); ?></h1>
+
+        <?php // Subtitle. Use [post_subtitle] in custom field.
+        if ( get_post_meta($post->ID, 'post_subtitle', true) ) {
+        	echo '<small>';
+            echo do_shortcode(get_post_meta($post->ID, 'post_subtitle', $single = true));
+            echo '</small>';
+            }
+        ?>
+
       <div class="meta-data">
       <?php get_template_part('templates/entry-meta'); ?>
       </div>

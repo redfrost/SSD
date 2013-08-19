@@ -1,6 +1,6 @@
 <div class="banner-slider <?php echo roots_row_class(); ?>">
 <div class="span12">
-<div id="myCarousel-auto" class="carousel carousel-fade slide page_banner_imgbox">
+<div id="myCarousel-auto" class="carousel carousel-fade slide news-banner-image">
 
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -33,7 +33,7 @@
         			}
         	} ?>
             </a>
-    <div class="carousel-caption page_banner_textbox">
+    <div class="carousel-caption news-banner-text">
      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
      <p><?php the_excerpt();?></p>
     </div>
@@ -64,7 +64,7 @@
         			}
         	} ?>
             </a>
-    <div class="carousel-caption page_banner_textbox">
+    <div class="carousel-caption news-banner-text">
      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
      <p><?php the_excerpt();?></p>
     </div>

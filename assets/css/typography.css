@@ -1,32 +1,32 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700); */
 
 
-.navbar, .brand, h1, h2, h3, h4, h5, h6, body, p, .btn {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Apple SD Gothic Neo", 나눔고딕, NanumGothic,'Malgun Gothic', Applegothic, sans-serif; 
- }
+/* Font Set */
+body { 
+    font-family: "proxima-nova", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    /* -webkit-font-smoothing: antialiased; better for dark background */
+    }
+    h1, h2, h3, h4, h5, h6, .btn, .navbar, .brand { }
 
 
 /* Font Size */
-body { font-size: 14px; font-size: 0.88rem; }
-h1 { font-size: 38px; font-size: 2.38rem; line-height:;     line-height:;        font-weight: bold; }
-h2 { font-size: 32px; font-size: 2.00rem; line-height:;     line-height:;        font-weight: bold; }
-h3 { font-size: 24px; font-size: 1.5rem;  line-height:28px; line-height:1.75rem; font-weight: bold; }
-h4 { font-size: 18px; font-size: 1.13rem; line-height:;     line-height:;        font-weight: bold; }
-h5 { font-size: 14px; font-size: 0.88rem; line-height:;     line-height:;        font-weight: normal; }
-h6 { font-size: 12px; font-size: 0.75rem; line-height:;     line-height:;        font-weight: normal; }
-p {
-    line-height: 24px; line-height: 1.5rem;
+body{ font-size: 14px; font-size: 0.88rem; line-height:24px;   line-height:1.6em    }
+h1  { font-size: 38px; font-size: 2.38rem; line-height:;       font-weight:;        }
+h2  { font-size: 32px; font-size: 2.00rem; line-height:normal; font-weight:;        }
+h3  { font-size: 22px; font-size: 1.38rem; line-height:normal; font-weight:;        }
+h4  { font-size: 18px; font-size: 1.13rem; line-height:;       font-weight:;        }
+h5  { font-size: 14px; font-size: 0.88rem; line-height:;       font-weight:;        }
+h6  { font-size: 12px; font-size: 0.75rem; font-weight:normal; color: #888; margin-top: 0; }
+p   {
+    margin-bottom: 1.2em;
     vertical-align: bottom;
     word-break: normal;
     word-wrap: break-word;
-	text-align: ;
-}
+    color: #333;
+    }
 
-.korean p {
-    color: #333333;
-    margin: 0 0 19px;
-}
+.wrap h4, h5 { margin: 0; }
 
 .wrap a, .wrap a:hover, .wrap a:active { text-decoration: none;}
 
@@ -37,35 +37,21 @@ blockquote p {
     font-weight: 300;
     line-height: 25px;
     margin-bottom: 0;
-    padding: 6px 0;
+    padding: 20px 0;
 }
 
-
-.site-header hgroup h1 {
-    font-size: 35px; font-size: 2.6rem;
-    line-height: 1.84615;
-}
-.site-header hgroup h2 {
-    color: #777777;
-    font-size: 13px; font-size: 0.93rem;
-    font-weight: lighter;
-    font-weight: 300;
-    line-height: 1.84615;
-}
+small { color: #888; } 
 
 
 /* Additional Font Style */
 .pen, .pen p { 
- 	 font-family: '나눔손글씨 펜',NanumPen,NanumPenWeb,"Apple SD Gothic Neo",'Malgun Gothic'!important;
+ 	 font-family:;
  	 }
 
 .brush, .brush p { 
- 	 font-family: '나눔손글씨 붓',NanumBrush,NanumBrushWeb,"Apple SD Gothic Neo",'Malgun Gothic'!important;
+ 	 font-family:;
  	 }
 
 .book, .book p { 
-     font-family: 나눔명조,NanumMyeongjo,NanumMyeongjoWeb,Georgia,"Apple SD Gothic Neo",'Malgun Gothic'!important; 
+     font-family:; 
      }
-
-
-

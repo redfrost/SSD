@@ -4,27 +4,28 @@
 
 /* Background
 ----------------------------------------- */
-
+body.home { opacity: 0; }
 body { padding-top: 0px; margin: auto; }
 body.static { min-width:; }
 /* Set this to fix div bg-cutoff issue */
 
 @media (min-width: 1025px) {  /* must set to min 1025 to fix layout in iPad 1024 resolution */
-html { background-image: url("http://www.sydneysmilesdental.com.au/storage/asset/concrete-texture.png"); } 
+html { background-image: url("../img/concrete-texture.png"); } 
 body { 
     background: #FFFFFF;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     margin: 0 auto 80px;
-    max-width: 62.5em;
-    padding: 1px 34px 0 !important;    
+    max-width: 1024px;
+    padding: 1px 0px 0 !important;    
     box-shadow: 0 0 5px #888888;
     }
+.banner { margin-bottom: 5px; }
 }  
+
 
 
 /* Layout */
 .wrap {
-    border-bottom: 1px solid #CCCCCC;
     padding-bottom: 24px !;
     padding-top: 24px;
 }
@@ -34,8 +35,8 @@ body {
     .footer-info {
         background: none repeat scroll 0 0 #333333;
         color: #FFFFFF !important;
-        margin: 20px -34px -40px;
-        padding: 0 34px;
+        margin: 20px 0px -40px;
+        padding: 0px;
     }
     .footer-info a, .footer-info li {
         color: #CCCCCC !important;
@@ -94,6 +95,7 @@ body {
     h1.site-title { float: left; }
     .nav-main.nav-hover-box {
         border-bottom: 0px none ! important;
+        border-top: 0px none ! important;
         }
         .header-standard .nav.nav-hover {
              float: right ! important;
@@ -104,13 +106,13 @@ body {
 .nav-main li a {
      color: #333333;
      font-size: 1.13rem;
-     font-weight: 200;
+     font-weight: 300;
 }
 
 .nav-main li li a {
      font-size: 1rem;
-     font-weight: 200;
-    line-height: 24px;line-height: 1.5rem;
+     font-weight: 300;
+     line-height: 24px;line-height: 1.5rem;
 }
 
 .site-description { display: none; }
@@ -143,7 +145,7 @@ body {
             float: left ! important;
             }
             #mc_embed_signup input.button {
-                padding: 10px 0px 29px;
+                height: 38px;
                 }
 
     /* Responsive fix */
@@ -159,58 +161,65 @@ body {
     border: 6px solid #ddd;
     box-shadow: 0;
     margin: 30px auto 0;
-    width: 100%px;
+    width: 100%;
 }
 
 
 
 /* Main slider */
 @media (min-width: 1001px) {
-    .custom_banner {
-        margin-left: -34px;
-        margin-right: -34px;
+    .custom-banner, .featured-image-box {
+        margin-left: -32px !important;
+        margin-right: -32px !important;
         }
     }
     @media (min-width: 980px) and (max-width: 1000px) {
-        .custom_banner {
-            margin-left: -20px;
-            margin-right: -20px;
+        .custom-banner, .featured-image-box {
+            margin-left: -20px !important;
+            margin-right: -20px !important;
             }
         }   
         @media (max-width: 979px) {
-            .custom_banner {
-                margin-left: -12px;
-                margin-right: -12px;
+            .custom-banner, .featured-image-box {
+                margin-left: -24px !important;
+                margin-right: -24px !important;
                 }
             }
             @media (max-width: 767px) {                
-                .custom_banner {
-                    margin-left: -20px;
-                    margin-right: -20px;
-                    margin-top: 0px;
+                .custom-banner, .featured-image-box {
+                    margin-left: -20px !important;
+                    margin-right: -20px !important;
+                    margin-top: 0px !important;
                     }            
                 }
 
 
 
 
-@media (min-width: 1024px) {  
+
+@media (min-width: 960px) {  
     .nav { margin-bottom: 40px !important; }
     .featured-banner {
-        height: 428px !important;
+        height: 430px !important;
         border-top: 5px solid #222222;
         }
   
     /* Breadcrumbs */
-    .breadcrumbs {
+    .breadcrumbs, .breadcrumb {
         background: none repeat scroll 0 0 #222222;
         color: #999999;
         display: block;
         font-size: 0.88rem;
-        margin: -24px -35px 50px !important;
+        margin: -24px -32px 24px !important;
         padding: 10px 30px !important;
     }
     
+}
+
+@media (max-width: 959px) {  
+.breadcrumbs, .breadcrumb {
+    display: none !important;
+    }
 }
 
 
@@ -252,7 +261,7 @@ footer section p {
 
 
 /* Copyright */
-.site_copyright {
+.site-copyright {
     color: #777777;
     display: block;
     font-weight: 200;
@@ -267,6 +276,7 @@ h1.bigtext {
     font-size: 3.2rem;
     line-height: 3.5rem;
     font-weight: 200;
+    margin-top: 0px !important;
 }
 
 blockquote p {
@@ -285,11 +295,35 @@ blockquote p {
 
 
 /* Map Get direction inoput */
-.get_direction input, textarea, .uneditable-input {
+.get_direction input, .get_direction textarea, .get_direction .uneditable-input {
     margin: 0 !important;
     padding: 6px 14px !important;
+    float: left;
+}
+.get_direction .btn {
+    float: left;
+    margin-left: 5px !important;
+    margin-top: 0px !important;
+    padding: 7px !important;
 }
 
+@media (max-width: 480px) {
+    .get_direction input, .get_direction textarea, .get_direction .uneditable-input, .get_direction .btn {
+        float: none;
+        margin: 0px 0px 4px 0px !important;
+        padding: 7px !important;
+    }
+}
+
+
+
+.main h3 {
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 24.5px;
+    margin-top: 40px !important;
+    padding: 4px 0;
+    width: 100%;
+}
 
 
 
@@ -340,30 +374,21 @@ html    { border-top: 4px solid #333333; }
              margin: 0 -20px !important;  
             }
             .featured-banner {
-                margin: 0 0 -150px 0 !important;
+                margin: 0 !important;
                 }
         
                 .page-header {
                     border-bottom: 0 solid #EEEEEE;
-                    margin: 0px 0 64px !important;
+                    font-weight: 100 !important;
+                    margin: 0 0 10px !important;
                     padding-bottom: 9px;
+                    text-align: center;
                     }
                     .page-header h1 {
-                        color: #FFFFFF;
-                        display: block;
-                        font-size: 3rem;
                         font-weight: 200;
-                        text-shadow: 1px 1px 3px #000000;
                         }    
 
-        .custom_banner { margin-top: 0 !important; }
-
-
-
-/* Breadcrumbs */
-.breadcrumbs { visibility: hidden; }
-
-
+        .custom-banner { margin-top: 0 !important; }
 
 
 
@@ -411,8 +436,8 @@ html    { border-top: 4px solid #333333; }
     
 @media (min-width: 980px) {
 .featured-image-box {
-    margin-left: -34px !important;
-    margin-right: -34px !important;
+    margin-left: -32px !important;
+    margin-right: -32px !important;
     }
 }
             
@@ -448,4 +473,14 @@ html    { border-top: 4px solid #333333; }
 
 
 
+/* Popover & tooltip */
 
+h3.popover-title {
+    border-bottom: 2px solid #EEEEEE;
+    font-size: 24.5px;
+    margin-top: 0 !important;
+    padding: 12px;
+    width: inherit;
+}
+
+.table .info { background: #f9f9f9; }

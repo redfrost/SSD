@@ -1,5 +1,5 @@
 <div class="banner-static <?php echo roots_row_class(); ?>">
-<div class="span12 page_banner">
+<div class="span12 news-banner">
 
 		<?php	// Get First Post in Category. 
 		global $post;
@@ -7,7 +7,7 @@
 		$myposts = get_posts( $args );
 		foreach( $myposts as $post ) :	setup_postdata($post); ?>
 
-       		<div class="page_banner_imgbox">
+       		<div class="news-banner-image">
        		<a href="<?php the_permalink(); ?>">
         	<?php
         	   if (is_page()) {
@@ -20,10 +20,10 @@
             </a>
        		</div>  
        					
- 			<div class="page_banner_textbox">
- 				<div class="page_banner_textbox_title">
+ 			<div class="news-banner-text">
+ 				<div class="news-banner-text-title">
  				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
- 				<div class="page_banner_textbox_text"><p><?php the_excerpt(); ?></p></div>
+ 				<div class="news-banner-text-excerpt"><p><?php the_excerpt(); ?></p></div>
  			</div>
 		<?php endforeach; ?>
 
