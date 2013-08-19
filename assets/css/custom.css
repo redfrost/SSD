@@ -1,0 +1,451 @@
+/* =============================================================================
+   CUSTOM STYLE
+   ========================================================================== */
+
+/* Background
+----------------------------------------- */
+
+body { padding-top: 0px; margin: auto; }
+body.static { min-width:; }
+/* Set this to fix div bg-cutoff issue */
+
+@media (min-width: 1025px) {  /* must set to min 1025 to fix layout in iPad 1024 resolution */
+html { background-image: url("http://www.sydneysmilesdental.com.au/storage/asset/concrete-texture.png"); } 
+body { 
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 80px;
+    max-width: 62.5em;
+    padding: 1px 34px 0 !important;    
+    box-shadow: 0 0 5px #888888;
+    }
+}  
+
+
+/* Layout */
+.wrap {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 24px !;
+    padding-top: 24px;
+}
+
+
+@media (min-width: 980px) {
+    .footer-info {
+        background: none repeat scroll 0 0 #333333;
+        color: #FFFFFF !important;
+        margin: 20px -34px -40px;
+        padding: 0 34px;
+    }
+    .footer-info a, .footer-info li {
+        color: #CCCCCC !important;
+    }
+}
+
+
+
+
+/* Navigation
+----------------------------------------- */
+
+/* Hover */
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #F1F1F1;
+    border-bottom: 0 solid #999;
+    border-radius: 0 0 0 0;
+    }
+
+    /* Selected Menu */
+    .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+        background-color: transparent;
+        border-bottom: 0px solid #999;
+        border-radius: 0;
+        color: #888;
+        }
+        .nav-pills .dropdown-menu { 
+            border-radius: 0; 
+            }
+            
+            /* Dropdown List Hover */
+            .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+                background-color: ;
+                background-image: none;
+                background-repeat: repeat-x;
+                color: #FFFFFF !important;
+                text-decoration: none;
+                }
+                
+                /* Dropdown List Selected Menu */
+                .dropdown-menu li.active a {
+                    border-right: 4px solid #999;    
+                    }
+                    
+                    /* Dropdown List Selected Hover */
+                    .dropdown-menu li.active a:hover { 
+                        color: inherit !important; 
+                        }
+                    
+                    
+
+/* Header
+----------------------------------------- */
+
+@media (min-width: 1025px) {
+    h1.site-title { float: left; }
+    .nav-main.nav-hover-box {
+        border-bottom: 0px none ! important;
+        }
+        .header-standard .nav.nav-hover {
+             float: right ! important;
+             margin-top: 50px;
+            }
+}
+
+.nav-main li a {
+     color: #333333;
+     font-size: 1.13rem;
+     font-weight: 200;
+}
+
+.nav-main li li a {
+     font-size: 1rem;
+     font-weight: 200;
+    line-height: 24px;line-height: 1.5rem;
+}
+
+.site-description { display: none; }
+
+
+
+
+
+/* Front-page Boxes */
+.boxes {
+    text-align:center;
+    }
+    .boxes p {
+        float: left;
+        text-indent: -9999px; 
+        }
+
+
+
+/* Mailchimp Newsletter field */  
+#mc_embed_signup form {
+    padding: 10px 0 44px !important;
+    }                  
+    #mc_embed_signup input.email {
+         float: left ! important;
+         min-width: 60% ! important;
+         width: 60%;
+        }
+        #mc_embed_signup .clear {
+            float: left ! important;
+            }
+            #mc_embed_signup input.button {
+                padding: 10px 0px 29px;
+                }
+
+    /* Responsive fix */
+    @media (max-width: 979px) {
+        #mc_embed_signup form { padding: 10px 0 0 !important; }
+        #mc_embed_signup input.email { float: none !important; min-width: 90% !important}
+        #mc_embed_signup .clear { float: none !important; }
+        }
+
+
+/* Crawler Logo slider */
+.logobox {
+    border: 6px solid #ddd;
+    box-shadow: 0;
+    margin: 30px auto 0;
+    width: 100%px;
+}
+
+
+
+/* Main slider */
+@media (min-width: 1001px) {
+    .custom_banner {
+        margin-left: -34px;
+        margin-right: -34px;
+        }
+    }
+    @media (min-width: 980px) and (max-width: 1000px) {
+        .custom_banner {
+            margin-left: -20px;
+            margin-right: -20px;
+            }
+        }   
+        @media (max-width: 979px) {
+            .custom_banner {
+                margin-left: -12px;
+                margin-right: -12px;
+                }
+            }
+            @media (max-width: 767px) {                
+                .custom_banner {
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    margin-top: 0px;
+                    }            
+                }
+
+
+
+
+@media (min-width: 1024px) {  
+    .nav { margin-bottom: 40px !important; }
+    .featured-banner {
+        height: 428px !important;
+        border-top: 5px solid #222222;
+        }
+  
+    /* Breadcrumbs */
+    .breadcrumbs {
+        background: none repeat scroll 0 0 #222222;
+        color: #999999;
+        display: block;
+        font-size: 0.88rem;
+        margin: -24px -35px 50px !important;
+        padding: 10px 30px !important;
+    }
+    
+}
+
+
+/* Opening Hours grid */
+dl { margin-bottom:50px; }
+ 
+    dl dt {
+        background:#0088cc;
+        color:#fff;
+        float:left;
+        font-weight:bold;
+        margin-right:10px;
+        padding:5px; 
+        width:34%;
+        } 
+        dl dd {
+            margin:2px 0;
+            padding:5px 0;
+            font-weight:400;
+            }
+            
+              @media (min-width: 980px) {
+                  dl dd { font-size: 16px;font-size: 1rem; }
+              }      
+            
+            
+/* Footer text warning */
+@media (min-width: 980px) {
+footer section p {
+    padding-top: 0;
+    text-align: justify;
+    }
+}
+.warning {
+    color: #a00000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Copyright */
+.site_copyright {
+    color: #777777;
+    display: block;
+    font-weight: 200;
+    margin: 20px 0 0;
+}
+
+
+
+
+
+h1.bigtext {
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+    font-weight: 200;
+}
+
+blockquote p {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+.textbox p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+
+
+/* Map Get direction inoput */
+.get_direction input, textarea, .uneditable-input {
+    margin: 0 !important;
+    padding: 6px 14px !important;
+}
+
+
+
+
+/* =============================================================================
+   RESPONSIVE SETTING
+   ========================================================================== */
+@media (min-width: 961px) and (max-width: 1024px) { body {  overflow-x: hidden; } }
+
+
+/* Mobile
+----------------------------------------- */
+
+/* Nav */
+.nav-main.nav-hover-box {
+    margin: 0px 0 !important;
+}
+
+
+@media (max-width: 767px) {
+
+/* Mobile Menu */
+html    { border-top: 4px solid #333333; }
+.banner { margin-top: 0 !important; padding-top: 40px; }
+
+    .nav-main.nav-hover-box {
+        border-bottom: 4px solid #000000;
+        border-top: 3px solid #888888;
+        font-size: 1rem;
+        height: 40px;
+        margin-bottom: 0;
+        margin: 20px -20px 0px -20px !important;
+        margin-top: 0;
+        padding-top: 8px;
+        
+        background: rgba(82,82,82,1);
+        background: -moz-linear-gradient(top, rgba(82,82,82,1) 0%, rgba(0,0,0,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(82,82,82,1)), color-stop(100%, rgba(0,0,0,1)));
+        background: -webkit-linear-gradient(top, rgba(82,82,82,1) 0%, rgba(0,0,0,1) 100%);
+        background: -o-linear-gradient(top, rgba(82,82,82,1) 0%, rgba(0,0,0,1) 100%);
+        background: -ms-linear-gradient(top, rgba(82,82,82,1) 0%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(to bottom, rgba(82,82,82,1) 0%, rgba(0,0,0,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525252', endColorstr='#000000', GradientType=0 );   
+        }
+
+
+       /* Featured banner */ 
+        .featured-image-box {
+             margin: 0 -20px !important;  
+            }
+            .featured-banner {
+                margin: 0 0 -150px 0 !important;
+                }
+        
+                .page-header {
+                    border-bottom: 0 solid #EEEEEE;
+                    margin: 0px 0 64px !important;
+                    padding-bottom: 9px;
+                    }
+                    .page-header h1 {
+                        color: #FFFFFF;
+                        display: block;
+                        font-size: 3rem;
+                        font-weight: 200;
+                        text-shadow: 1px 1px 3px #000000;
+                        }    
+
+        .custom_banner { margin-top: 0 !important; }
+
+
+
+/* Breadcrumbs */
+.breadcrumbs { visibility: hidden; }
+
+
+
+
+
+    /* Footer */ 
+    .sns_link li a {
+        font-size: 32px;font-size: 2rem !important;
+        opacity: 1;
+        }
+        .sns_link li, .sns_link li a img {
+            height: 25px;
+            padding: 0 18px 0 18px !important;
+        }
+
+
+    }
+
+
+
+
+
+
+/* Tablet
+----------------------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+.featured-image-box {
+    margin-left: -10px;
+    margin-right: -10px;
+    }
+    
+
+    
+    
+    
+}
+
+@media (min-width: 768px) and (max-width: 840px) {
+
+    .featured-banner {
+    margin-bottom: -70px;
+    margin-top: 0px !important;
+    }
+}
+
+
+    
+@media (min-width: 980px) {
+.featured-image-box {
+    margin-left: -34px !important;
+    margin-right: -34px !important;
+    }
+}
+            
+@media (min-width: 961px) and (max-width: 979px) {
+.featured-image-box {
+    margin-left: -10px;
+    margin-right: -10px;
+    }
+}
+
+            
+@media (min-width: 768px) and (max-width: 960px) {
+.featured-banner {
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .phone_features {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .phone_features {
+        display: block !important;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
